@@ -51,6 +51,6 @@ void Pedido::ticketCliente(){
         cout << arrPtrProductos[index]->str() << endl;
         totalAPagar = totalAPagar + arrPtrProductos[index]->calculaTotalPagar();
     }
-    cout << cantidad << "articulos" << endl;
+    cout << cantidad << " "<< "articulos" << endl;
     cout << "Total a pagar $" << totalAPagar << endl;
 }
