@@ -47,11 +47,10 @@ void Pedido::leerArchivo(std::string nombre ){
 
 void Pedido::ticketCliente(){
     int totalAPagar = 0;
-    for (int index = 0; index < cantidad; ++index) {
-        if (arrPtrProductos[index] != nullptr) {
-            cout << arrPtrProductos[index]->str() << endl;
-            totalAPagar += arrPtrProductos[index]->calculaTotalPagar();
-        }
+        for (int index = 0; index < cantidad; index++){
+        cout << arrPtrProductos[index]->str() << endl;
+        totalAPagar = totalAPagar + arrPtrProductos[index]->calculaTotalPagar();
     }
+    cout << cantidad << "articulos" << endl;
     cout << "Total a pagar $" << totalAPagar << endl;
 }
