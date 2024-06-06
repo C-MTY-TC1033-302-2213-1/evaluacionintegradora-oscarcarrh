@@ -34,7 +34,7 @@
     }
 
     string Producto::str(){
-        return "P" + to_string(1) + "-" + to_string(precio) + "-" + to_string(peso) + "-" + to_string(calculaTotalPagar());
+        return  nombre + "-$" + to_string(precio) + "-" + to_string(peso) + "-$" + to_string(calculaTotalPagar());
     }
 
     int Producto::calculaTotalPagar(){
